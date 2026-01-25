@@ -1,5 +1,4 @@
 import React from "react";
-import Subscribe from "../components/Subscribe";
 
 const Contact = () => {
   return (
@@ -49,7 +48,6 @@ const Contact = () => {
           </button>
         </form>
       </section>
-      <Subscribe />
     </main>
   );
 };

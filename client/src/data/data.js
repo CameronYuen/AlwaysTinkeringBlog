@@ -1,95 +1,62 @@
-import author1 from "../images/suravi.webp";
-import author2 from "../images/harini.webp";
-import author3 from "../images/biswajit.webp";
-import author4 from "../images/ishan.webp";
-import author5 from "../images/Apurba.webp";
+// Author images
+import authorImg from "../images/Cy.jpg";
 
-// blog post img
-import girlImg from "../images/girl-waring-woolen-sawl.webp";
-import girlImg2 from "../images/girl-standing-by-wall.webp";
-import travelImg from "../images/window-blue-wall.webp";
-import techImg from "../images/yellow-camera.webp";
-import foodImg from "../images/foot-platter.webp";
+// Blog post images
+import welcomeImg from "../images/halfdome.jpg";
 
+// Author data
 const AuthorData = [
   {
-    name: "Surabhi Gupta",
-    location: "Kerala",
-    posts: 5,
-    desc: "Front end developer by profession. Digital painting enthusiast. Shealso involved in various social activity. Fan of winter and snow.",
-    img: author1,
-  },
-  {
-    name: "Harini Banerjee",
-    location: "Mumbai",
-    posts: 4,
-    desc: "Harini Banerjee is an award-winning young blogger and content marketer. She also sings sometimes. Frequent traveler, cricket fan, and technology enthusiast.",
-    img: author2,
-  },
-  {
-    name: "Biswajit Saha",
-    location: "India",
-    posts: 4,
-    desc: "Biswajit Saha is a very simple person. He likes to ride a bicycle when free. Prefers tea over coffee. He is currently writing code at gbjsolution.com",
-    img: author3,
-  },
-  {
-    name: "Ishan Sharma",
-    location: "Delhi",
-    posts: 3,
-    desc: "Ishan is back end developer by profession and writer by passion. He writes science fiction novels and short story mostly for children. He is the always smiling person.",
-    img: author4,
-  },
-  {
-    name: "Apurba Talukdar",
-    location: "Bangalore",
-    posts: 3,
-    desc: "Apurba is UI & UX designer by profession, photographer by passion. Solo traveller, blogger, badminton player and movie lover.",
-    img: author5,
+    name: "Cam",
+    location: "United States",
+    posts: 1,
+    desc: "Software engineer, tennis enthusiast, Miata lover, and perpetual tinkerer. Always diving deep into new obsessions.",
+    img: authorImg,
   },
 ];
 
+// Blog posts
 const BlogPosts = [
   {
-    img: girlImg,
-    tag: "LifeStyle",
-    title: "Self-observation is the first step of inner unfolding",
-    desc: "Almost instantly the whole truth of the transaction seemed to rush upon her mind, and her wrath was inconceivably violent. She asked me a thousand questions in a",
-    date: "March 16, 2022",
+    id: "welcome-to-always-tinkering",
+    img: welcomeImg,
+    tag: "Life",
+    title: "Welcome to Always Tinkering",
+    desc: "An introduction to this space where I'll be sharing my journey through tennis, Miatas, travel, gear, and all the things I can't stop tinkering with.",
+    date: "January 25, 2026",
     posttype: "feature",
-  },
-  {
-    img: girlImg2,
-    tag: "Health",
-    title:
-      "The mind and body are not separate. what affects one, affects the other",
-    desc: "This recital put the Captain into an ecstasy; he went from the lady to the gentleman, and from the gentleman to the lady, to enjoy alternately the sight of their distress",
-    date: "February 16, 2022",
-    posttype: "feature",
-  },
-  {
-    img: travelImg,
-    tag: "Travel",
-    title: "Never let your memories be greater than your dreams",
-    desc: "Before long the searchlight discovered some distance away a schooner with all sails set, apparently the same vessel which had been noticed earlier in the evening. The",
-    date: "March 16, 2022",
-    posttype: "latest",
-  },
-  {
-    img: techImg,
-    tag: "Technology",
-    title: "Bangladesh has developed plastic alternative using jute",
-    desc: "Dr. Johnson, as usual, spoke contemptuously of Colley Cibber. 'It is wonderful that a man, who for forty years had lived with the great and the witty, should have acquired",
-    date: "March 16, 2022",
-    posttype: "latest",
-  },
-  {
-    img: foodImg,
-    tag: "Food",
-    title: "I do not stick to rules when cooking. I rely on my imagination",
-    desc: "I walked down to the station with them, and then wandered through the streets of the little town, finally returning to the hotel, where I lay upon the sofa and tried to",
-    date: "March 16, 2022",
-    posttype: "latest",
+    author: "Cam",
+    authorImg: authorImg,
+    readTime: "4 min read",
+    content: `
+      <p>Hey there! Welcome to Always Tinkering, my corner of the internet where I document the things I can't stop thinking about, learning about, and yes—tinkering with.</p>
+
+      <h3>Who am I?</h3>
+      <p>I'm a software engineer by trade, which means I spend my days solving problems, writing code, and breaking things (hopefully in staging, not production). But that problem-solving mindset doesn't stop when I close my laptop. It follows me everywhere—onto the tennis court, into my Miata, across travel destinations, and deep into rabbit holes about gear and equipment.</p>
+
+      <h3>What is this blog about?</h3>
+      <p>This blog is where I share my journey through the things I'm passionate about:</p>
+
+      <p><strong>Tennis:</strong> I've fallen hard for this sport. From gear reviews and string setups to match analysis and my own journey improving my game, tennis has become a constant in my life. Expect detailed breakdowns, recommendations, and the occasional story from the court.</p>
+
+      <p><strong>Miatas:</strong> There's something special about a lightweight roadster with the top down. Whether it's a Sunday drive, a modification project, or just admiring the simplicity of the design, I'll be sharing my adventures with the world's favorite roadster.</p>
+
+      <p><strong>Travel:</strong> Exploring new places, finding hidden gems, and documenting the journey. Travel posts will cover everything from weekend trips to longer adventures, always with an eye for the details that make a place special.</p>
+
+      <p><strong>Gear & Equipment:</strong> I'm the kind of person who researches a purchase for weeks, reads every review, and still second-guesses the decision. That obsessive attention to detail means I end up learning a lot about the gear I use—and I want to share those insights here.</p>
+
+      <h3>Why "Always Tinkering"?</h3>
+      <p>Because that's what I do. I tinker with code, with tennis racquet setups, with car modifications, with camera settings, with coffee brewing methods—you name it. I'm constantly optimizing, experimenting, and trying to understand how things work at a deeper level. Sometimes it's productive. Sometimes it's just fun. Either way, it's who I am.</p>
+
+      <h3>What to expect</h3>
+      <p>I'm not trying to be the definitive expert on any of these topics. Instead, think of this blog as a fellow enthusiast sharing what they've learned along the way. Expect honest opinions, detailed breakdowns, and the occasional deep dive into topics that probably don't warrant that level of analysis (but I'm doing it anyway).</p>
+
+      <p>Thanks for stopping by. I'm excited to share this journey with you.</p>
+
+      <p>Let's tinker.</p>
+
+      <p><em>— Cam</em></p>
+    `,
   },
 ];
 

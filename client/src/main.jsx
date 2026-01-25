@@ -10,6 +10,11 @@ import MonthArchive from "./pages/MonthArchive.jsx";
 import YearArchive from "./pages/YearArchive.jsx";
 import Contact from "./pages/Contact.jsx";
 import SingleBlogPage from "./pages/SingleBlogPage.jsx";
+import TennisGear from "./pages/TennisGear.jsx";
+import TennisJourney from "./pages/TennisJourney.jsx";
+import Miata from "./pages/Miata.jsx";
+import Travel from "./pages/Travel.jsx";
+import Life from "./pages/Life.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +42,27 @@ const router = createBrowserRouter([
     element: <App element={<Contact />} />,
   },
   {
-    path: "/single-blog",
+    path: "/tennis-gear",
+    element: <App element={<TennisGear />} />,
+  },
+  {
+    path: "/tennis-journey",
+    element: <App element={<TennisJourney />} />,
+  },
+  {
+    path: "/miata",
+    element: <App element={<Miata />} />,
+  },
+  {
+    path: "/travel",
+    element: <App element={<Travel />} />,
+  },
+  {
+    path: "/life",
+    element: <App element={<Life />} />,
+  },
+  {
+    path: "/blog/:id",
     element: <App element={<SingleBlogPage />} />,
   },
 ]);

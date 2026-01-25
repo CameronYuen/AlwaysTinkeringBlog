@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import HeroImg from "../images/hero.png";
+import HeroImg from "../images/Cy.jpg";
+import MiataImg from "../images/Miata.jpg";
+import TravelImg from "../images/halfdome.jpg";
+import RacketsImg from "../images/Rackets.jpg";
+import TennisJourneyImg from "../images/tennis_journey.jpg";
+import LifeImg from "../images/life.jpg";
 
-import Subscribe from "../components/Subscribe";
 import FeaturedPost from "../components/FeaturedPost";
 import LatestPost from "../components/LatestPost";
 
@@ -55,12 +59,68 @@ const Home = () => {
             </div>
           </div>
           <div className="img flex justify-center max-md:hidden">
-            <img src={HeroImg} className="rounded-full" alt="Always Tinkering Hero" />
+            <img src={HeroImg} className="rounded-full w-48 h-48 object-cover" alt="Always Tinkering Hero" />
           </div>
         </section>
+
+        {/* Explore Categories */}
+        <section className="explore mt-16">
+          <h2 className="text-3xl font-bold text-slate-800 mb-8">Explore</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Tennis Gear */}
+            <Link to="/tennis-gear" className="group relative overflow-hidden rounded-xl h-64 shadow-lg hover:shadow-xl transition-shadow">
+              <img src={RacketsImg} alt="Tennis Gear" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/10"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Tennis Gear</h3>
+                <p className="text-sm opacity-90">Reviews and recommendations</p>
+              </div>
+            </Link>
+
+            {/* Tennis Journey */}
+            <Link to="/tennis-journey" className="group relative overflow-hidden rounded-xl h-64 shadow-lg hover:shadow-xl transition-shadow">
+              <img src={TennisJourneyImg} alt="Tennis Journey" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/10"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Tennis Journey</h3>
+                <p className="text-sm opacity-90">Stories from the court</p>
+              </div>
+            </Link>
+
+            {/* Miata */}
+            <Link to="/miata" className="group relative overflow-hidden rounded-xl h-64 shadow-lg hover:shadow-xl transition-shadow">
+              <img src={MiataImg} alt="Miata" className="absolute inset-0 w-full h-full object-cover object-bottom group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/10"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Miata</h3>
+                <p className="text-sm opacity-90">The roadster life</p>
+              </div>
+            </Link>
+
+            {/* Travel */}
+            <Link to="/travel" className="group relative overflow-hidden rounded-xl h-64 shadow-lg hover:shadow-xl transition-shadow">
+              <img src={TravelImg} alt="Travel" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/10"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Travel</h3>
+                <p className="text-sm opacity-90">Adventures and discoveries</p>
+              </div>
+            </Link>
+
+            {/* Life */}
+            <Link to="/life" className="group relative overflow-hidden rounded-xl h-64 shadow-lg hover:shadow-xl transition-shadow md:col-span-2 lg:col-span-1">
+              <img src={LifeImg} alt="Life" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-black/10"></div>
+              <div className="relative h-full flex flex-col justify-end p-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Life</h3>
+                <p className="text-sm opacity-90">Thoughts and reflections</p>
+              </div>
+            </Link>
+          </div>
+        </section>
+
         <FeaturedPost />
         <LatestPost />
-        <Subscribe />
       </main>
     </>
   );
