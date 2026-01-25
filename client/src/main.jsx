@@ -66,7 +66,7 @@ const router = createBrowserRouter([
     element: <App element={<SingleBlogPage />} />,
   },
 ], {
-  basename: "/PersonalWebsite"
+  basename: "/AlwaysTinkeringBlog"
 });
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
