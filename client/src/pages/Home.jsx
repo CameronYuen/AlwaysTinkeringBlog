@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import HeroImg from "../images/hero.png";
@@ -9,6 +8,7 @@ import HeroImg from "../images/hero.png";
 import Subscribe from "../components/Subscribe";
 import FeaturedPost from "../components/FeaturedPost";
 import LatestPost from "../components/LatestPost";
+
 const Home = () => {
   return (
     <>
@@ -16,11 +16,10 @@ const Home = () => {
         <section className="hero flex justify-between gap-4 items-center max-md:flex-col">
           <div className="content flex flex-col gap-6 w-full">
             <h1 className="text-slate-800 text-6xl font-bold">
-              Hay, I am Pawan
+              Always Tinkering
             </h1>
-            <p className="text-slate-800 text-2xl">
-              An Full Stack developer, Blogger and Problem Solver. On this site
-              I write about my learning and experience.
+            <p className="text-slate-800 text-2xl italic">
+              A software engineer’s journey through life, falling into deep dives on tennis, Miatas, travel, gear, and the things I can’t stop tinkering with.
             </p>
             <div className="subscribeBox flex gap-3">
               <input
@@ -28,7 +27,7 @@ const Home = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Your email Address"
+                placeholder="Your email address"
               />
               <button className="bg-slate-800 text-white px-3 py-2 rounded-md">
                 Subscribe
@@ -38,30 +37,25 @@ const Home = () => {
               <h5>Follow:</h5>
               <ul className="flex gap-3 text-slate-800">
                 <li>
-                  <Link>
+                  <Link to="https://twitter.com/yourhandle" target="_blank">
                     <TwitterIcon />
                   </Link>
                 </li>
                 <li>
-                  <Link>
-                    <FacebookIcon />
-                  </Link>
-                </li>
-                <li>
-                  <Link>
-                    <InstagramIcon />
-                  </Link>
-                </li>
-                <li>
-                  <Link>
+                  <Link to="https://github.com/yourhandle" target="_blank">
                     <GitHubIcon />
+                  </Link>
+                </li>
+                <li>
+                  <Link to="https://www.instagram.com/yourhandle" target="_blank">
+                    <InstagramIcon />
                   </Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="img flex justify-center max-md:hidden">
-            <img src={HeroImg} className="rounded-full" alt="" />
+            <img src={HeroImg} className="rounded-full" alt="Always Tinkering Hero" />
           </div>
         </section>
         <FeaturedPost />
