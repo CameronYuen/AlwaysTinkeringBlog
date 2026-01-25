@@ -23,7 +23,9 @@ const Home = () => {
               Always Tinkering
             </h1>
             <p className="text-slate-800 text-2xl italic">
-              A software engineer’s journey through life, falling into deep dives on tennis, Miatas, travel, gear, and the things I can’t stop tinkering with.
+              <p className="text-slate-800 text-2xl italic">
+                Just a guy exploring life, endlessly curious, diving into tennis, Miatas, travel, gear, and all the things I love tinkering with.
+              </p>
             </p>
             <div className="subscribeBox flex gap-3">
               <input
