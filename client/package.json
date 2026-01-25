@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://CameronYuen.github.io/AlwaysTinkeringBlog",
+  "homepage": "https://cameronyuen.github.io/AlwaysTinkeringBlog",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
